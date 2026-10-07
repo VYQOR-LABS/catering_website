@@ -9,7 +9,7 @@ export function HomeCommunity() {
   return (
     <>
       <section className="w-full bg-[var(--background)] py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Testimonials</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">Loved by Our Clients</h2>
@@ -38,7 +38,7 @@ export function HomeCommunity() {
       </section>
 
       <section className="w-full bg-[var(--surface-strong)] py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Follow the buzz</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">@buzziteventsandcatering</h2>
@@ -58,7 +58,7 @@ export function HomeCommunity() {
       </section>
 
       <section className="w-full bg-[var(--background)] pb-20 pt-10">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="overflow-hidden rounded-[2.5rem] border border-[var(--line)] bg-[var(--surface-card)] p-8 md:px-12 md:py-14">
             <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
               <div>

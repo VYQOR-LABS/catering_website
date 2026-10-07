@@ -25,7 +25,7 @@ export function Navbar() {
         scrolled ? "shadow-[0_8px_24px_rgba(0,0,0,0.2)]" : "",
       ].join(" ")}
     >
-      <nav className="mx-auto flex w-full max-w-[1600px] items-center justify-between px-4 py-2.5 md:px-6 lg:px-10">
+      <nav className="mx-auto flex w-full items-center justify-between px-4 py-2.5 md:px-6 lg:px-10">
         <Link href="/" className="flex shrink-0 items-center" aria-label="Buzzit home">
           <BrandLogo />
         </Link>

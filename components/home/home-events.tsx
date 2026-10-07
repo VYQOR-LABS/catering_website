@@ -25,7 +25,7 @@ export function HomeEvents() {
       </section>
 
       <section className="w-full bg-[var(--background)] py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Upcoming</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">What&apos;s Happening Next</h2>
@@ -54,7 +54,7 @@ export function HomeEvents() {
       </section>
 
       <section className="w-full bg-[var(--surface-strong)] py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Why Buzzit</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">Why Buzzit?</h2>

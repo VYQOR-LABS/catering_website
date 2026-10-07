@@ -4,12 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { SectionReveal } from "@/components/section-reveal";
 import { services } from "@/data/services";
 import { gallery } from "@/data/gallery";
-
-const menuGroups = [
-  { title: "Main dishes", items: ["Rice", "Chicken", "Beef", "Fish"] },
-  { title: "Sides", items: ["Vegetables", "Potatoes", "Salads"] },
-  { title: "Desserts", items: ["Cakes", "Pastries", "Fresh fruit"] },
-];
+import { menuPackages } from "@/data/menu";
 
 const planningSteps = [
   "Tell Us Your Idea",
@@ -25,7 +20,7 @@ export function HomeServices() {
   return (
     <>
       <section className="w-full pb-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Our services</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">Services Made for Every Occasion</h2>
@@ -58,30 +53,40 @@ export function HomeServices() {
       </section>
 
       <section className="w-full bg-[var(--background)] py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">A taste of the menu</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">Made for Your Table</h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[var(--muted)]">Choose a direction, then we&apos;ll shape the menu around your guests, event and budget.</p>
           </SectionReveal>
           <div className="grid gap-5 md:grid-cols-3">
-            {menuGroups.map((group) => (
-              <SectionReveal key={group.title} className="rounded-[1.8rem] border border-[var(--line)] bg-[var(--surface-card)] p-6 md:p-8">
-                <h3 className="text-2xl font-semibold text-[var(--foreground)]">{group.title}</h3>
-                <ul className="mt-5 grid gap-3 text-[var(--muted)]">
-                  {group.items.map((item) => <li key={item} className="flex items-center gap-3"><span className="h-1.5 w-1.5 rounded-full bg-[var(--brand-accent)]" />{item}</li>)}
-                </ul>
+            {menuPackages.slice(0, 3).map((menuPackage, index) => (
+              <SectionReveal key={menuPackage.name} className="group overflow-hidden rounded-[1.8rem] border border-[var(--line)] bg-[var(--surface-card)]">
+                <div className="relative aspect-[16/9] overflow-hidden">
+                  <Image src={menuPackage.image} alt={`${menuPackage.name} sample menu`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <span className="absolute bottom-4 left-4 rounded-full border border-white/50 bg-black/30 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white backdrop-blur-sm">
+                    Sample menu {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="p-6 md:p-8">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--gold)]">{menuPackage.occasion}</p>
+                  <h3 className="mt-2 text-2xl font-semibold text-[var(--foreground)]">{menuPackage.name}</h3>
+                  <p className="mt-4 text-sm leading-6 text-[var(--muted)]">{menuPackage.items.join(" · ")}</p>
+                </div>
               </SectionReveal>
             ))}
           </div>
           <div className="mt-8 text-center">
-            <Link href="/book?service=Custom%20Menu" className="inline-flex rounded-full border border-[var(--brand-accent)] bg-[var(--brand-accent)] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-[var(--brand-on-dark)]">Request a Custom Menu</Link>
+            <Link href="/menu" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-[var(--brand-accent)] bg-[var(--brand-accent)] px-6 py-3.5 text-sm font-semibold uppercase tracking-[0.12em] text-[var(--brand-on-dark)] transition hover:brightness-110">
+              View the full menu <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </section>
 
       <section className="w-full bg-[var(--surface-strong)] py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Food showcase</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">Food Worth Gathering For</h2>
@@ -106,7 +111,7 @@ export function HomeServices() {
       </section>
 
       <section className="w-full py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="mb-12 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Planning process</p>
             <h2 className="mt-4 text-4xl font-semibold text-[var(--foreground)] md:text-5xl">Your Event. Our Expertise.</h2>

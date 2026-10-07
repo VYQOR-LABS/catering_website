@@ -7,7 +7,7 @@ import { navigation, contactLinks } from "@/data/navigation";
 export function Footer() {
   return (
     <footer className="mt-auto w-full border-t border-[var(--brand-stroke)] bg-[var(--brand-footer)] text-[var(--brand-on-dark)]">
-      <div className="mx-auto grid max-w-[1600px] gap-10 px-4 py-12 sm:grid-cols-2 md:px-6 lg:grid-cols-[1.2fr_0.8fr_0.9fr_1.1fr] lg:gap-12 lg:px-10">
+      <div className="mx-auto grid w-full gap-10 px-4 py-12 sm:grid-cols-2 md:px-6 lg:grid-cols-[1.2fr_0.8fr_0.9fr_1.1fr] lg:gap-12 lg:px-10">
         <div className="space-y-5">
           <BrandLogo />
           <p className="max-w-xs text-xs leading-6 text-[var(--brand-muted)]">
@@ -64,7 +64,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-[1600px] flex-col items-center justify-between gap-4 border-t border-[var(--brand-stroke)] px-4 py-4 pb-[calc(5rem+env(safe-area-inset-bottom))] text-center text-[11px] text-[var(--brand-muted)] sm:flex-row sm:pb-4 sm:text-left md:px-6 lg:px-10">
+      <div className="mx-auto flex w-full flex-col items-center justify-between gap-4 border-t border-[var(--brand-stroke)] px-4 py-4 pb-[calc(5rem+env(safe-area-inset-bottom))] text-center text-[11px] text-[var(--brand-muted)] sm:flex-row sm:pb-4 sm:text-left md:px-6 lg:px-10">
         <p>© 2026 Buzzit Event &amp; Catering. All rights reserved.</p>
         <ThemeToggle className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--brand-stroke)] text-[var(--brand-on-dark)] transition hover:border-[var(--brand-highlight)] hover:text-[var(--brand-highlight)]" />
         <p>Powered by <span className="text-[var(--brand-on-dark)]">VYQOR LABS</span></p>

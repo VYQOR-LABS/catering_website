@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowDown, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { menuCategories, menuPackages } from "@/data/menu";
 
@@ -29,7 +29,7 @@ export function MenuCatalogue() {
 
   return (
     <>
-      <section id="catalogue" className="mx-auto max-w-[1440px] px-4 py-16 sm:px-6 sm:py-20 lg:px-10 lg:py-24">
+      <section id="catalogue" className="mx-auto w-full px-4 py-16 sm:px-6 sm:py-20 lg:px-10 lg:py-24">
         <div className="mb-8 flex flex-col gap-3 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">A considered selection</p>
@@ -109,7 +109,7 @@ export function MenuCatalogue() {
       </section>
 
       <section className="bg-[var(--surface-strong)] py-16 sm:py-20 lg:py-24">
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 sm:px-6 lg:px-10">
           <div className="mb-9 flex flex-col gap-3 sm:mb-11 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Ideas to get started</p>
@@ -140,37 +140,30 @@ export function MenuCatalogue() {
         </div>
       </section>
 
-      <section className="mx-auto grid max-w-[1440px] gap-9 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16 lg:px-10 lg:py-24">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">A good meal, shared</p>
-          <h2 className="mt-3 max-w-lg text-3xl font-semibold leading-tight sm:text-4xl">Good food becomes part of the celebration.</h2>
-          <p className="mt-4 max-w-lg text-sm leading-7 text-[var(--muted)]">From the first welcome to the final plate, the right menu makes room for people to gather, connect and enjoy the moment.</p>
-          <Link href="/gallery" className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[var(--brand-accent)] transition hover:gap-3">
-            See moments from our events <ArrowRight size={16} />
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 gap-3 sm:gap-4">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-lg">
-            <Image src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="An elegantly set dining table" fill sizes="(max-width: 640px) 45vw, 30vw" className="object-cover" />
-          </div>
-          <div className="relative mt-8 aspect-[4/5] overflow-hidden rounded-lg sm:mt-12">
-            <Image src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80" alt="A warmly lit celebration table" fill sizes="(max-width: 640px) 45vw, 30vw" className="object-cover" />
-          </div>
-        </div>
-      </section>
-
-      <section id="build-menu" className="bg-[#102923] text-[#e5ece8]">
-        <div className="mx-auto grid max-w-[1440px] gap-9 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:gap-16 lg:px-10 lg:py-24">
+      <section id="build-menu" className="bg-[var(--surface-strong)] text-[var(--foreground)]">
+        <div className="mx-auto grid w-full gap-9 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-12 lg:px-10 lg:py-24">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a9c7ba]">Your occasion, your menu</p>
-            <h2 className="mt-3 max-w-xl text-3xl font-semibold leading-tight sm:text-5xl">Let&apos;s create something delicious.</h2>
-            <p className="mt-4 max-w-lg text-sm leading-7 text-white/70">Share a few details about your event. We&apos;ll use them to start a conversation about the right menu and service for your guests.</p>
-            <p className="mt-6 flex items-center gap-2 text-xs text-white/60"><ArrowDown size={15} /> Begin with a few event details</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--gold)]">Your occasion, your menu</p>
+            <h2 className="mt-3 max-w-xl text-3xl font-semibold leading-tight sm:text-4xl">Good food becomes part of the celebration.</h2>
+            <p className="mt-4 max-w-lg text-sm leading-7 text-[var(--muted)]">From the first welcome to the final plate, the right menu makes room for people to gather, connect and enjoy the moment. Tell us what you&apos;re planning and we&apos;ll shape a menu around your guests.</p>
+            <Link href="/gallery" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[var(--brand-accent)] transition hover:gap-3">
+              See moments from our events <ArrowRight size={16} />
+            </Link>
+            <div className="mt-7 grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+                <Image src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="An elegantly set dining table" fill sizes="(max-width: 640px) 45vw, 30vw" className="object-cover" />
+              </div>
+              <div className="relative mt-5 aspect-[4/3] overflow-hidden rounded-lg sm:mt-8">
+                <Image src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80" alt="A warmly lit celebration table" fill sizes="(max-width: 640px) 45vw, 30vw" className="object-cover" />
+              </div>
+            </div>
           </div>
-          <div className="rounded-lg border border-white/15 bg-white/[0.04] p-5 sm:p-7">
-            <label className="grid gap-2 text-sm font-medium">
+          <div className="rounded-lg border border-[var(--line)] bg-[var(--surface-card)] p-5 sm:p-7">
+            <h3 className="text-xl font-semibold">Let&apos;s create something delicious.</h3>
+            <p className="mt-2 text-sm leading-6 text-[var(--muted)]">Share a few details to start planning your menu.</p>
+            <label className="mt-6 grid gap-2 text-sm font-medium">
               What are you planning?
-              <select value={eventType} onChange={(event) => setEventType(event.target.value)} className="min-h-12 w-full rounded-md border border-white/20 bg-[#102923] px-3 text-sm text-white outline-none focus:border-[#a9c7ba]">
+              <select value={eventType} onChange={(event) => setEventType(event.target.value)} className="min-h-12 w-full rounded-md border border-[var(--line)] bg-[var(--surface)] px-3 text-sm text-[var(--foreground)] outline-none focus:border-[var(--brand-accent)]">
                 {eventOptions.map((option) => <option key={option}>{option}</option>)}
               </select>
             </label>
@@ -178,7 +171,7 @@ export function MenuCatalogue() {
               <legend className="text-sm font-medium">How many guests?</legend>
               <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">
                 {guestOptions.map((option) => (
-                  <button key={option} type="button" aria-pressed={guests === option} onClick={() => setGuests(option)} className={`min-h-11 rounded-md border px-3 text-xs font-medium transition ${guests === option ? "border-[#a9c7ba] bg-[#a9c7ba] text-[#102923]" : "border-white/20 text-white/75 hover:border-white/50"}`}>
+                  <button key={option} type="button" aria-pressed={guests === option} onClick={() => setGuests(option)} className={`min-h-11 rounded-md border px-3 text-xs font-medium transition ${guests === option ? "border-[var(--brand-accent)] bg-[var(--brand-accent)] text-white" : "border-[var(--line)] text-[var(--foreground)] hover:border-[var(--brand-accent)]"}`}>
                     {option}
                   </button>
                 ))}
@@ -186,13 +179,13 @@ export function MenuCatalogue() {
             </fieldset>
             <label className="mt-6 grid gap-2 text-sm font-medium">
               What would you like help with?
-              <select value={serviceType} onChange={(event) => setServiceType(event.target.value)} className="min-h-12 w-full rounded-md border border-white/20 bg-[#102923] px-3 text-sm text-white outline-none focus:border-[#a9c7ba]">
+              <select value={serviceType} onChange={(event) => setServiceType(event.target.value)} className="min-h-12 w-full rounded-md border border-[var(--line)] bg-[var(--surface)] px-3 text-sm text-[var(--foreground)] outline-none focus:border-[var(--brand-accent)]">
                 <option>Catering</option>
                 <option>Event Planning</option>
                 <option>Catering + Event Planning</option>
               </select>
             </label>
-            <Link href={bookingHref} className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[#a9c7ba] px-5 text-sm font-semibold text-[#102923] transition hover:brightness-110">
+            <Link href={bookingHref} className="mt-7 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-[var(--brand-accent)] px-5 text-sm font-semibold text-white transition hover:brightness-110">
               Request a custom menu <ArrowRight size={17} />
             </Link>
           </div>

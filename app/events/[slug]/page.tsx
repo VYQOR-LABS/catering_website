@@ -22,7 +22,7 @@ export default async function EventDetailPage({
 
   return (
     <main className="w-full bg-[var(--background)] py-12 text-[var(--foreground)] sm:py-16">
-      <div className="mx-auto w-full max-w-[1600px] px-4 md:px-6 lg:px-10">
+      <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
         <div className="relative h-[300px] w-full overflow-hidden rounded-[1.5rem] border border-[var(--line)] bg-[var(--surface-strong)] sm:h-[420px] lg:h-[520px]">
           <Image src={event.image} alt={event.title} fill priority sizes="100vw" className="object-cover" />
         </div>

@@ -47,7 +47,7 @@ export function HomeIntro() {
       </section>
 
       <SectionReveal className="w-full border-y border-[var(--line)] bg-[var(--surface)]">
-        <div className="mx-auto grid max-w-[1600px] gap-3 px-4 py-6 text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--foreground)] md:grid-cols-5 md:px-6 lg:px-10">
+        <div className="mx-auto grid w-full gap-3 px-4 py-6 text-center text-[10px] font-semibold uppercase tracking-[0.2em] text-[var(--foreground)] md:grid-cols-5 md:px-6 lg:px-10">
           {['Weddings', 'Corporate', 'Birthdays', 'Private Events', 'Outdoor Events'].map((item) => (
             <div key={item} className="py-2">{item}</div>
           ))}
@@ -55,7 +55,7 @@ export function HomeIntro() {
       </SectionReveal>
 
       <section className="w-full py-20">
-        <div className="mx-auto max-w-[1600px] px-4 md:px-6 lg:px-10">
+        <div className="mx-auto w-full px-4 md:px-6 lg:px-10">
           <SectionReveal className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="space-y-6">
               <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[var(--gold)]">Made for moments</p>

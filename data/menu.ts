@@ -44,8 +44,8 @@ export const menuCategories: MenuCategory[] = [
     slug: "kenyan-favourites",
     name: "Kenyan & African Favourites",
     description: "A taste of home, with much-loved dishes for a table made to be shared.",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "A colourful African-inspired buffet spread",
+    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "A platter of grilled meat, chicken and vegetables prepared for sharing",
     dishes: ["Kenyan pilau", "Chapati", "Mukimo", "Matoke", "Ugali", "Nyama choma", "Kachumbari", "Samosas"],
   },
   {
@@ -84,8 +84,8 @@ export const menuCategories: MenuCategory[] = [
     slug: "drinks",
     name: "Drinks & Beverages",
     description: "Refreshing pours and warm favourites to complement the occasion.",
-    image: "https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=1000&q=80",
-    imageAlt: "Fresh tropical drinks with citrus and mint",
+    image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Colourful citrus and fruit drinks served with mint",
     dishes: ["Mango juice", "Passion juice", "Pineapple juice", "Fresh lemonade", "Iced tea", "Tea & coffee", "Mocktails"],
   },
 ];
@@ -94,7 +94,7 @@ export const menuPackages = [
   {
     name: "The Classic",
     occasion: "Family gatherings",
-    image: "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
     items: ["Rice", "Chicken", "Beef", "Vegetables", "Salad", "Dessert & juice"],
   },
   {
@@ -106,7 +106,7 @@ export const menuPackages = [
   {
     name: "The Executive",
     occasion: "Meetings & conferences",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
     items: ["Breakfast", "Tea & coffee", "Finger foods", "Main course", "Fresh salads", "Dessert"],
   },
   {
