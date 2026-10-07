@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f3ee;
+  --foreground: #1b1713;
+  --muted: #5d5249;
+  --surface: #fffdf9;
+  --surface-strong: #f4efe7;
+  --surface-card: #ffffff;
+  --gold: #1d594b;
+  --gold-soft: #35745f;
+  --gold-light: #d8e9df;
+  --line: rgba(32, 25, 18, 0.12);
+  --shadow: rgba(32, 23, 18, 0.08);
+  --media-overlay: rgba(248, 243, 238, 0.68);
+  --media-foreground: #1b1713;
+  --brand-header: #102923;
+  --brand-footer: #0a1d19;
+  --brand-accent: #1d594b;
+  --brand-highlight: #a9c7ba;
+  --brand-on-dark: #e5ece8;
+  --brand-muted: rgba(229, 236, 232, 0.72);
+  --brand-stroke: rgba(229, 236, 232, 0.2);
+}
+
+html[data-theme="dark"] {
+  --background: #0d0a09;
+  --foreground: #f5ecdd;
+  --muted: #d7cab7;
+  --surface: #140f0d;
+  --surface-strong: #1b1714;
+  --surface-card: #0f0d0b;
+  --gold: #8bc9a9;
+  --gold-soft: #b4dec8;
+  --gold-light: #d8efe2;
+  --line: rgba(233, 204, 120, 0.18);
+  --shadow: rgba(0, 0, 0, 0.3);
+  --media-overlay: rgba(13, 10, 9, 0.78);
+  --media-foreground: #f5ecdd;
+  --brand-header: #140f0d;
+  --brand-footer: #0f0d0b;
+  --brand-accent: #316b52;
+  --brand-highlight: #8bc9a9;
+  --brand-on-dark: #f5ecdd;
+  --brand-muted: rgba(245, 236, 221, 0.72);
+  --brand-stroke: rgba(245, 236, 221, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes menu-hero-in {
+  from { opacity: 0.8; transform: scale(1.05); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes menu-copy-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(217, 170, 45, 0.8);
+  color: #120e0d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

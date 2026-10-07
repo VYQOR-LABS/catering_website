@@ -1,0 +1,33 @@
+<svg width="900" height="300" viewBox="0 0 900 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold" x1="90" y1="40" x2="760" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7E39A"/>
+      <stop offset="0.35" stop-color="#E9BC4D"/>
+      <stop offset="0.7" stop-color="#F7D25A"/>
+      <stop offset="1" stop-color="#C78D22"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="300" rx="32" fill="#F0C449"/>
+  <g>
+    <path d="M116 186C171 134 319 101 492 109C611 115 707 141 775 172C799 182 818 192 836 186C850 182 857 170 856 154C855 129 843 100 819 81C793 61 748 57 704 64C641 74 571 88 518 86C448 83 393 63 349 46C275 15 172 28 121 83C103 103 89 124 82 145C75 166 82 182 96 191C104 196 113 193 116 186Z" fill="#111111"/>
+    <path d="M173 169C226 131 326 113 493 117C619 121 714 149 765 177C780 184 790 192 796 201C824 198 842 183 856 168C850 148 832 130 807 120C742 91 635 68 540 67C433 66 332 80 258 104C190 126 153 145 119 172C96 191 92 204 96 215C102 209 111 205 121 196C144 177 159 172 173 169Z" fill="#1C1C1C"/>
+    <text x="110" y="168" font-family="Georgia, serif" font-size="146" font-weight="700" fill="url(#gold)" letter-spacing="-3">Buzzit</text>
+    <path d="M130 196H750C757 196 765 201 768 208L774 242C778 260 767 274 749 274H143C118 274 95 256 96 231L99 216C100 201 115 196 130 196Z" fill="#1a1a1a"/>
+    <path d="M148 206H736C744 206 752 211 756 218L765 238C770 249 761 260 748 260H136C120 260 111 247 116 234L126 217C130 210 139 206 148 206Z" fill="#1a1a1a"/>
+    <text x="178" y="244" font-family="Georgia, serif" font-size="34" font-weight="700" fill="url(#gold)" letter-spacing="4">EVENT &amp; CATERING</text>
+    <g transform="translate(680 90)">
+      <path d="M16 0C29 0 35 14 30 24C26 33 18 46 7 52C-6 59 -22 72 -32 74C-43 76 -57 61 -50 50C-47 45 -42 40 -42 34C-42 22 -39 15 -30 14C-18 12 -21 2 -14 -6C-7 -17 10 -17 16 0Z" fill="#F2C546"/>
+      <ellipse cx="-8" cy="44" rx="31" ry="24" fill="#111111"/>
+      <ellipse cx="-8" cy="44" rx="22" ry="18" fill="#F4D765"/>
+      <ellipse cx="-14" cy="44" rx="6" ry="6" fill="#111111"/>
+      <path d="M18 30C21 11 37 3 52 12C68 22 68 46 52 58C38 68 23 58 18 30Z" fill="#F4D765"/>
+      <circle cx="18" cy="28" r="8" fill="#111111"/>
+      <circle cx="52" cy="24" r="7" fill="#111111"/>
+      <path d="M34 16C40 6 53 5 59 15" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+      <path d="M29 9C35 1 48 1 53 10" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+      <path d="M6 55C17 68 33 77 41 86" stroke="#111111" stroke-width="6" stroke-linecap="round"/>
+      <path d="M36 70C54 63 67 68 80 79" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+      <path d="M40 59C61 49 71 51 90 60" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
